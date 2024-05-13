@@ -1,0 +1,10 @@
+@import "utilities/_colors.css";
+@import "utilities/_spacing.css";
+@import "layouts/_grid.css";
+@import "components/_navbar.css";
+@import "components/_button.css";
+@import "components/_banner.css";
+
+body {
+  background-color: #6f1515 !important; /* Exemple de style global */
+}
