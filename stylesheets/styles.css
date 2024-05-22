@@ -6,8 +6,9 @@
 @import "components/_banner.css";
 
 body {
-  background-color: #6f1515 !important; /* Exemple de style global */
+  background-color: #6f1515 !important;
   color: white;
+  text-align: center;
 }
 
 a {
