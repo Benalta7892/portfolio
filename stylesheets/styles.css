@@ -4,17 +4,64 @@
 @import "components/_navbar.css";
 @import "components/_button.css";
 @import "components/_banner.css";
+@import "components/_text.css";
 
 body {
-  background-color: #6f1515 !important;
-  color: white;
+  background-color: #fffff6 !important;
+  color: rgb(50, 50, 50);
 }
 
 a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
+  font-weight: bold;
 
   &:hover {
-    color: white;
+    color: rgb(249, 126, 25);
+    text-decoration: none;
   }
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.skills-list img {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
+  padding: 8px;
+  margin-right: 12px;
+  margin: 8px;
+  transition: transform 0.3s ease;
+}
+
+.skills-list img:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  flex: 1;
+  padding: 15px;
+  min-width: 300px; /* Ensure columns do not get too narrow */
 }
