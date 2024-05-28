@@ -12,6 +12,10 @@ body {
   color: rgb(50, 50, 50);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
