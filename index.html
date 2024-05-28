@@ -14,6 +14,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
+    />
   </head>
   <body>
     <nav class="navbar bg-body-tertiary">
@@ -108,32 +112,45 @@
       <div class="container">
         <h2 class="title-large">Portfolio</h2>
         <div class="row" id="projects-container">
-          <!-- Les projets seront insérés ici par JavaScript -->
+          <!-- Conteneur principal pour le carrousel -->
+          <div class="container-carousel">
+            <div class="carousel">
+              <div class="carousel-intern">
+                <a
+                  href="https://github.com/Chorusgrey/zero_to_heroes"
+                  class="slide"
+                  target="_blank"
+                >
+                  <img
+                    src="stylesheets/images/zerotoheros.png"
+                    alt="image du lien projet 1"
+                  />
+                </a>
+                <a
+                  href="https://github.com/Benalta7892/pokeswype"
+                  class="slide"
+                  target="_blank"
+                >
+                  <img
+                    src="stylesheets/images/pokeswype.png"
+                    alt="image du lien projet 2"
+                  />
+                </a>
+              </div>
+              <div class="carousel-controls">
+                <button id="prev">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button id="next">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="carousel-dots"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- Conteneur principal pour le carrousel -->
-    <div class="container-carousel">
-      <div class="carousel">
-        <div class="carousel-intern">
-          <div class="slide">
-            <img
-              src="stylesheets/images/zerotoheros.png"
-              alt="image projet 1"
-            />
-          </div>
-          <div class="slide">
-            <img src="stylesheets/images/pokeswype.png" alt="image projet 2" />
-          </div>
-        </div>
-        <div class="carousel-controls">
-          <button id="prev">Précédent</button>
-          <button id="next">Suivant</button>
-        </div>
-        <div class="carousel-dots"></div>
-      </div>
-    </div>
 
     <section class="cv">
       <div class="container">
